@@ -25,6 +25,7 @@ func cargoHandler(w http.ResponseWriter, r *http.Request) {
 	inventory := []Cargo{
 		{ID: "1", Item: "Servidores Dell", Quantity: 5, Status: "Em Trânsito", Timestamp: time.Now()},
 		{ID: "2", Item: "Switches Cisco", Quantity: 10, Status: "Armazenado", Timestamp: time.Now()},
+		{ID: "3", Item: "Firewall Fortigate", Quantity: 2, Status: "Em Teste", Timestamp: time.Now()},
 	}
 	w.Header().Set("Content-Type", "application/json")
 	json.NewEncoder(w).Encode(inventory)
