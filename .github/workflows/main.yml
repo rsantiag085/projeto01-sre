@@ -24,5 +24,6 @@ jobs:
                 context: .
                 push: true
                 tags: |
+                  ${{ secrets.DOCKER_HUB_USERNAME }}/go-cargo-app:v1.3
                   ${{ secrets.DOCKER_HUB_USERNAME }}/go-cargo-app:v1.2
                   ${{ secrets.DOCKER_HUB_USERNAME }}/go-cargo-app:latest
